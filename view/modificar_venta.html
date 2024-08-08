@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="search-bar">
+        <input class="search-input" placeholder="Buscar ventas..." type="search" />
+        <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Venta</th>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                    <th>Estado</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Venta #001</td>
+                    <td>Venta de producto A a cliente X</td>
+                    <td>$100.00</td>
+                    <td><span class="badge">Pendiente</span></td>
+                    <td>2023-05-01</td>
+                    <td class="actions-cell">
+                        <button class="action-menu-button"><i class="fa-solid fa-arrows-up-down"></i></button>
+                        <div class="action-menu">
+                            <button class="action-button edit-button">Editar</button>
+                            <button class="action-button show-button">Ver Detalles</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal-info">
+    <div class="modal-header">
+        <button class="modal-close-button"><i class="fa-solid fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+        <div class="modal-content">
+            <h3>Venta #001</h3>
+            <p>Descripción: Venta de producto A a cliente X</p>
+            <p>Monto: $100.00</p>
+            <p>Estado: Pendiente</p>
+            <p>Fecha: 2023-05-01</p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="modal-button">Cerrar</button>
+    </div>
+</div>

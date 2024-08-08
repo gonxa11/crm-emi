@@ -1,0 +1,108 @@
+<div class="card">
+    <div class="header-form">
+        <h3 class="title">Formulario de venta</h3>
+        <p class="subtitle">Ingresa los datos del suscriptor</p>
+    </div>
+    <div class="content">
+        <form class="grid">
+            <div class="field">
+                <label>
+                    Nombres
+                    <input name="nombres" id="nombres" placeholder="Ingresa los nombres" required />
+                </label>
+            </div>
+            <div class="field">
+                <label>
+                    Apellidos
+                    <input name="aoellidos" id="apellidos" placeholder="Ingresa los apellidos" required />
+                </label>
+            </div>
+            <div class="field">
+                <label>Tipo de Documento
+                    <select name="tipo_doc" id="tipo_doc" required>
+                        <option value=""></option>
+                        <option value="cedula">Cédula</option>
+                        <option value="pasaporte">Pasaporte</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </label>
+            </div>
+            <div class="field">
+                <label>
+                    Número de Documento
+                    <input type="number" name="num_doc" id="num_doc" placeholder="Ingresa el número" required />
+                </label>
+            </div>
+            <div class="field">
+                <label for="fecha-expedicion">Fecha de Expedición</label>
+                <input type="date" name="fecha_exp" id="fecha_exp">
+            </div>
+            <div class="field">
+                <label>
+                    Teléfono 1
+                    <input name="telefono-1" id="telefono-1" placeholder="Ingresa el número" pattern="3[0-9]{9}"
+                        maxlength="10" title="El número debe empezar por 3 y tener 10 dígitos" required />
+                </label>
+            </div>
+            <div class="field">
+                <label>
+                    Teléfono 2
+                    <input name="telefono-2" id="telefono-2" placeholder="Ingresa el número" pattern="3[0-9]{9}"
+                        maxlength="10" title="El número debe empezar por 3 y tener 10 dígitos" required />
+                </label>
+            </div>
+            <div class="field">
+                <label>
+                    Fecha de Nacimiento
+                    <input type="date" name="fecha_nac" id="fecha_nac">
+                </label>
+            </div>
+            <div class="field">
+                <label>
+                    Plan
+                    <select name="plan" id="plan" required>
+                        <option value=""></option>
+                    </select>
+                </label>
+            </div>
+            <div class="field">
+                <label>
+                    Precio
+                    <input name="precio" id="precio" type="text" readonly>
+                </label>
+            </div>
+            <div class="field">
+                <label>
+                    Departamento
+                    <select name="departamento" id="departamento">
+                        <option value=""></option>
+                    </select>
+                </label>
+            </div>
+            <div class="field">
+                <label>
+                    Ciudad
+                    <select name="ciudad" id="ciudad">
+                        <option value=""></option>
+                    </select>
+                </label>
+            </div>
+            <div class="field">
+                <label for="direccion">Dirección</label>
+                <textarea name="direccion" id="direccion" placeholder="Ingresa la dirección" required></textarea>
+            </div>
+        </form>
+    </div>
+    <div class="actions">
+        <button class="btn primary">Guardar Datos</button>
+        <button class="btn afiliado">Afiliados</button>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="actions">
+        <button class="btn" id="agregar-afiliado">Agregar Afiliado</button>
+        <button class="btn primary">Guardar Datos</button>
+        <button class="btn close">Cerrar</button>
+    </div>
+</div>
